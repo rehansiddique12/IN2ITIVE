@@ -17789,6 +17789,17 @@ a {
   line-height: 58px;
 }
 
+.scroll-box {
+  max-height: 800px;     /* fixed height */
+  overflow-y: auto;      /* enable vertical scrolling */
+  scrollbar-width: none;
+  margin-bottom: 100px; /* hide scrollbar in Firefox */
+}
+
+.scroll-box::-webkit-scrollbar {
+  display: none;         /* hide scrollbar in Chrome, Edge, Safari */
+}
+
 .breadcrumb-area-bg {
   background-image: url(../images/banner/21.jpg);
 }
