@@ -9481,6 +9481,69 @@ textarea::placeholder {
   /* Firefox */
   opacity: 1;
 }
+
+/* gallery container with scroll */
+.gallery-container {
+  max-height: 1000px;
+  overflow-x: auto;   /* enable horizontal scroll */
+   /* prevent vertical scroll */
+  white-space: nowrap; /* keep items in a single row */
+}
+
+/* Hide scrollbar for Chrome, Safari, Edge */
+.gallery-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.gallery-container {
+  scrollbar-width: none;
+  -ms-overflow-style: none; /* IE & old Edge */
+}
+
+/* fixed image box */
+.img-box {
+  width: 100%;   /* fixed width */
+  height: 445px;  /* fixed height */
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto; /* center inside column */
+  border-radius: 6px;
+  background: #f4f4f4;
+}
+
+/* all images equal size */
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* crop to fill without distortion */
+  object-position: center;
+  display: block;
+}
+
+/* overlay */
+.item-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.img-box:hover .item-overlay {
+  opacity: 1;
+}
+
+.item-overlay span {
+  color: #fff;
+  font-size: 24px;
+}
+
+
+
 input[type=text]:-ms-input-placeholder,
 input[type=password]:-ms-input-placeholder,
 input[type=email]:-ms-input-placeholder,
@@ -15293,7 +15356,7 @@ a {
 }
 
 .swiper-banner-two-wrapper .banner-bg-2 {
-  background-image: url(../images/banner/02.jpg);
+  background-image: url(../images/banner);
   height: 920px;
 }
 .swiper-banner-two-wrapper .banner-bg-3 {
@@ -17790,7 +17853,7 @@ a {
 }
 
 .scroll-box {
-  max-height: 800px;     /* fixed height */
+  max-height: 1000px;     /* fixed height */
   overflow-y: auto;      /* enable vertical scrolling */
   scrollbar-width: none;
   margin-bottom: 100px; /* hide scrollbar in Firefox */
@@ -18134,13 +18197,13 @@ a {
   }
 }
 .single-service-area-one.two::after {
-  background-image: url(../images/service/01.jpg);
+  background-image: url(../images/in2itive-data/IH-151\ Running/011.jpeg);
 }
 .single-service-area-one.three::after {
-  background-image: url(../images/service/16.jpg);
+  background-image: url(../images/in2itive-data/IH-151\ Running/022.jpeg);
 }
 .single-service-area-one.four::after {
-  background-image: url(../images/service/17.jpg);
+  background-image: url(../images/in2itive-data/IH-151\ Running/033.jpeg);
 }
 .single-service-area-one::after {
   position: absolute;
@@ -18149,7 +18212,7 @@ a {
   top: 50%;
   transform: translate(-50%, -50%) scale(0);
   width: 100%;
-  background-image: url(../images/service/15.jpg);
+  background-image: url(../images/in2itive-data/IH-151\ Running/044.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -19228,13 +19291,13 @@ a {
   height: 100%;
 }
 .single-working-prcess-one.two .inner::after {
-  background-image: url(../images/why-choose/06.jpg);
+  background-image: url(../images/in2itive-data/G.F\ Lounge/01.jpg);
 }
 .single-working-prcess-one.three .inner::after {
-  background-image: url(../images/why-choose/07.jpg);
+  background-image: url(../images/in2itive-data/G.F\ Lounge/02.jpg);
 }
 .single-working-prcess-one.four .inner::after {
-  background-image: url(../images/why-choose/08.jpg);
+  background-image: url(../images/in2itive-data/G.F\ Lounge/03.jpg);
 }
 .single-working-prcess-one .inner {
   height: 100%;
@@ -19251,7 +19314,7 @@ a {
 .single-working-prcess-one .inner::after {
   position: absolute;
   content: "";
-  background-image: url(../images/why-choose/05.jpg);
+  background-image: url(../images/in2itive-data/G.F\ Lounge/04.jpg);
   width: 0%;
   height: 100%;
   background-repeat: no-repeat;
