@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IN2ITIVE DESIGN - Home</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/main/toplogo.png"
+    />
+    <!-- fontawesome 6.4.2 -->
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome-6.css" />
+    <!-- swiper Css 10.2.0 -->
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css" />
+    <!-- Bootstrap 5.0.2 -->
+    <link rel="stylesheet" href="assets/css/vendor/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+    <!-- metismenu scss -->
+    <link rel="stylesheet" href="assets/css/vendor/metismenu.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      .client-section {
+        background: white no-repeat center center/cover;
+        padding: 80px 60px;
+        display: flex;
+        flex-direction: row; /* stack sections vertically */
+        align-items: center; /* center horizontally */
+        justify-content: center;
+        gap: 60px;
+        color: black;
+        position: relative;
+        text-align: center;
+      }
+
+      /* Dark overlay */
+      .client-section::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: white;
+        backdrop-filter: blur(3px);
+      }
+
+      .client-section > div {
+        position: relative;
+        z-index: 2;
+      }
+
+      .client-section p strong {
+        font-weight: 700;
+        color: #30ace0;
+        font-size: 26px;
+        display: inline-block;
+        margin-bottom: 15px;
+      }
+
+      /* two-column wrappers */
+      .client-section .d-flex {
+        display: flex;
+        justify-content: center;
+        gap: 60px; /* space between the two lists */
+        flex-wrap: wrap;
+      }
+
+      .client-section ul {
+        list-style: none;
+        margin-top: 12px;
+        padding-left: 0;
+        text-align: left; /* keep lists readable */
+      }
+
+      .client-section ul li {
+        margin-bottom: 8px;
+        font-size: 17px;
+        display: flex;
+        align-items: center;
+        line-height: 1.6;
+        color: #000;
+      }
+
+      /* Dot color */
+      .client-section ul li::before {
+        content: "•";
+        color: #30ace0;
+        margin-right: 8px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="rts-header-style-one header--sticky">
+      <!-- logo area start -->
+      <a href="" class="logo">
+        <img
+          src="assets/images/main/logodel.png"
+          style="width: 200px"
+          alt="logo-"
+        />
+      </a>
+      <!-- logo area end -->
+      <div class="nav-area-center">
+        <nav class="navigation">
+          <ul class="parent-ul">
+            <li class="has-dropdown with-megamenu">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="has-dropdown">
+               <a class="nav-link" href="about.html">About Us</a>
+              <ul class="submenu">
+                <li class="lim">
+                  <a class="sdm-main" href="client-list.html">Client List </a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a class="nav-link" href="#">Projects</a>
+              <ul class="submenu">
+                <li class="lim">
+                  <a class="sdm-main" href="houes.html">Luxurious Houses</a>
+                </li>
+                <li class="lim">
+                  <a class="sdm-main" href="apartments.html"
+                    >Luxurious Apartments</a
+                  >
+                </li>
+                <li class="lim">
+                  <a class="sdm-main" href="farmhouses.html"
+                    >Luxurious Farmhouses</a
+                  >
+                </li>
+                <li class="lim">
+                  <a class="sdm-main" href="hotels.html">Luxurious Hotels</a>
+                </li>
+                <li class="lim">
+                  <a class="sdm-main" href="buildings.html"
+                    >Luxurious Buildings</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li><a class="nav-link" href="management.html">Management</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="action-area">
+        <div id="search" class="search">
+          <i class="fa-light fa-magnifying-glass"></i>
+        </div>
+        <div class="menu-icon" id="menu-btn">
+          <svg
+            width="16"
+            height="14"
+            viewBox="0 0 16 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 1.34375C0 0.886719 0.351562 0.5 0.84375 0.5H14.9062C15.3633 0.5 15.75 0.886719 15.75 1.34375C15.75 1.83594 15.3633 2.1875 14.9062 2.1875H0.84375C0.351562 2.1875 0 1.83594 0 1.34375ZM0 6.96875C0 6.51172 0.351562 6.125 0.84375 6.125H10.4062C10.8633 6.125 11.25 6.51172 11.25 6.96875C11.25 7.46094 10.8633 7.8125 10.4062 7.8125H0.84375C0.351562 7.8125 0 7.46094 0 6.96875ZM5.90625 13.4375H0.84375C0.351562 13.4375 0 13.0859 0 12.5938C0 12.1367 0.351562 11.75 0.84375 11.75H5.90625C6.36328 11.75 6.75 12.1367 6.75 12.5938C6.75 13.0859 6.36328 13.4375 5.90625 13.4375Z"
+              fill="#30373E"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- header style one end -->
+    <!-- bread croumba rea start -->
+    <div class="breadcrumb-area-bg bg_image">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="bread-crumb-area-inner">
+              <div class="breadcrumb-top">
+                <a href="index.html">Home</a> /
+                <a class="active" href="#">Clients List</a>
+              </div>
+              <div class="bottom-title">
+                <h1 class="title">Clients List</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bread croumba rea end -->
+    <div>
+      <div>
+        <div class="col-lg-12">
+          <div class="title-style-center">
+            <div class="pre-title-area" style="margin-top: 70px">
+              <img src="assets/images/about/02.png" alt="about" />
+              <span class="pre-title">Clients List </span>
+            </div>
+            <h2 class="title quote">TrustFull Clients</h2>
+          </div>
+        </div>
+      </div>
+      <div class="client-section">
+        <!-- first div -->
+        <div>
+          <h2 class="title quote" style="color: #30ace0">
+            Residential Projects
+          </h2>
+          <div class="d-flex gap-20">
+            <ul>
+              <li>Mr. Najeeb Ullah Khan - Islamabad</li>
+              <li>Mr. Muhammad Rizwan - Fazia Housing</li>
+              <li>Dr. Reees Farhan - Eden Society (H-15)</li>
+              <li>Dr. Suleman Tariq - Lahore</li>
+              <li>Mr. Sufyan Tariq - Lahore</li>
+              <li>Mr. Aamir - Park View Lahore</li>
+            </ul>
+            <ul>
+              <li>Mr. Bilal - Phase Town DHA Lahore</li>
+              <li>Mr. Haris - Phase Town DHA Lahore</li>
+              <li>Mr. Awais - Phase Town DHA Lahore</li>
+              <li>Capt. Ahmed - Bahria Town Phase 1 DHA</li>
+              <li>Mr. Nafees Sameer - Aamir Town Lahore</li>
+              <li>Mr. Asim Bedar - PIA Society</li>
+            </ul>
+          </div>
+        </div>
+        <!-- end first div -->
+        <!-- Start  second div -->
+        <div>
+          <h2 class="title quote" style="color: #30ace0">Turn Keys</h2>
+          <div class="d-flex">
+            <div>
+              <ul>
+                <li>Highnoon Laboratories Ltd.</li>
+                <li>Happy Seller Bahria Town Lahore</li>
+                <li>Neep Solution Liberty Market Lahore</li>
+                <li>ChenOne Store DHA Lahore</li>
+                <li>Chaazam Energy Isl Lahore</li>
+                <li>Chaazam Estate DHA Lahore</li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li>Always Davis Road Lahore</li>
+                <li>Natmi Fertilizer</li>
+                <li>Mr. Taha Ch. Mankeara Society</li>
+                <li>Eat Without Guilt Faisalabad</li>
+                <li>Tariq Flour Mills Manga Road Lahore</li>
+                <li>Weveez Pizza Jaranwala</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end  second div -->
+      </div>
+      <style>
+        .brand-slider {
+          width: 100%;
+          overflow: hidden;
+          padding: 50px 0;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+        }
+
+        .brand-wrapper {
+          width: 80%; /* adjust size of visible area */
+          overflow: hidden;
+          position: relative;
+          mask-image: linear-gradient(
+            to right,
+            transparent,
+            black 15%,
+            black 85%,
+            transparent
+          );
+          -webkit-mask-image: linear-gradient(
+            to right,
+            transparent,
+            black 15%,
+            black 85%,
+            transparent
+          );
+        }
+
+        .brand-track {
+          display: flex;
+          gap: 40px;
+          animation: slide 30s linear infinite;
+          width: max-content;
+          align-items: center;
+        }
+        .brand-item {
+          background: #fff;
+          width: 200px; /* fixed equal width */
+          height: 200px; /* fixed equal height */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 6px;
+          border: 2px solid #6ac9f1;
+          padding: 10px; /* inner spacing */
+        }
+
+        .brand-item img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; /* keeps original proportion */
+          opacity: 0.9;
+          transition: 0.3s;
+        }
+
+        .brand-item img:hover {
+          opacity: 1;
+          transform: scale(1.05);
+        }
+
+        @keyframes slide {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(-50%);
+          }
+        }
+      </style>
+      <div>
+        <div class="col-lg-12">
+          <div class="title-style-center">
+            <div class="pre-title-area">
+              <img src="assets/images/about/02.png" alt="about" />
+              <span class="pre-title">Clients List </span>
+            </div>
+            <h2 class="title quote">Client Portfolio Clients</h2>
+          </div>
+        </div>
+      </div>
+      <div class="brand-slider">
+        <div class="brand-wrapper">
+          <div class="brand-track">
+            <!-- Original Row -->
+            <div class="brand-item">
+              <img src="assets/images/cliend/chenone.png" />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/Belgian-jewelers.jpeg" />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/dha.jpeg" />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/falcon.jpg" />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/fast.jpg" />
+            </div>
+            <div class="brand-item">
+              <img
+                src="assets/images/cliend/fazia.png"
+              />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/hight-noor.jpg" />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/indus-h.jpg" />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/neep.jpeg" />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/Nizamenergy.png" />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/Premieragency.jpg" />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/new1.jpg" />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/new2.jpg" />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/new3.jpg" />
+            </div>
+
+            <!-- Duplicate Row for Infinite Loop -->
+            <div class="brand-item">
+              <img src="assets/images/cliend/chenone.png" />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/Belgian-jewelers.jpeg" />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/dha.jpeg" />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/falcon.jpg" />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/fast.jpg" />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/fazia.png" />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/hight-noor.jpg" />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/indus-h.jpg" />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/neep.jpeg" />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/Nizamenergy.png" />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/Premieragency.jpg" />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/new1.jpg" />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/new2.jpg" />
+            </div>
+            <div class="brand-item">
+              <img src="assets/images/cliend/new3.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer area start -->
+    <div class="rts-footer-area bg-footer-image bg_image">
+      <div class="container">
+        <div class="row ptb--100 ptb_sm--60">
+          <div class="col-lg-12">
+            <div class="footer-area-wrapper-one">
+              <div class="single-footer-wized">
+                <a href="#" class="logo">
+                  <img
+                    src="assets/images/main/logodel.png"
+                    style="
+                      background-color: #fff;
+                      height: 100px;
+                      width: 200px;
+                      border-radius: 10px;
+                    "
+                    alt="logo"
+                  />
+                </a>
+                <p class="disc">
+                  we are passionate about creating exceptional interior spaces
+                  that inspire, delight, and enhance the lives of our clients.
+                </p>
+                <form action="#">
+                  <div class="input-email">
+                    <input
+                      type="text"
+                      placeholder="Enter your email address"
+                      required
+                    />
+                    <button><i class="fa-thin fa-arrow-right"></i></button>
+                  </div>
+                </form>
+              </div>
+              <div class="single-footer-wized">
+                <div class="menu-links-area">
+                  <h6 class="title">Company:</h6>
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="hotels.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="management.html">Management</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="single-footer-wized">
+                <div class="menu-links-area">
+                  <h6 class="title">Contact</h6>
+                  <div class="contact-information-1">
+                    <!-- single  contact info -->
+                    <div class="single-contact-info">
+                      <div class="icon">
+                        <i class="fa-regular fa-phone-volume"></i>
+                      </div>
+                      <div class="information">
+                        <a href="Tel:+92 322-4552778">+92 322-4552778</a>
+                        <span class="support">Call us for support</span>
+                      </div>
+                    </div>
+                    <!-- single  contact info end -->
+                    <!-- single  contact info -->
+                    <div class="single-contact-info">
+                      <div class="icon">
+                        <i class="fa-regular fa-envelope"></i>
+                      </div>
+                      <div class="information">
+                        <a href="mailto:example@example.com"
+                          >abbas@in2itivedesign.pk</a
+                        >
+                        <span class="support">Email us for query</span>
+                      </div>
+                    </div>
+                    <!-- single  contact info end -->
+                    <!-- single  contact info -->
+                    <div class="single-contact-info">
+                      <div class="icon">
+                        <i class="fa-regular fa-map-location-dot"></i>
+                      </div>
+                      <div class="information">
+                        <a
+                          href="https://www.google.com/maps/place/Office+622+6th+Floor+Siddiq+Trade+Center,+72-main+Boulevard,H+Gulberg+2+Lahore,+Pakistan/@31.5173455,74.3385904,15z/data=!4m10!1m2!2m1!1sOffice+%23+18-P,+Siddique+Trade+Center+Gulberg+II,%C2%A0Lahore.!3m6!1s0x391905005c3e8051:0xa6f74fda23ff0511!8m2!3d31.5311883!4d74.3525126!15sCjlPZmZpY2UgIyAxOC1NLCBTaWRkaXF1ZSBUcmFkZSBDZW50ZXIgR3VsYmVyZyBJSSzCoExhaG9yZS6SARBzb2Z0d2FyZV9jb21wYW55qgFtEAEqDyILb2ZmaWNlIDE4IG0oADIfEAEiG8AkG_fYxP0V8YHB40idqTbC82BL5FE-SbyIQzI3EAIiM29mZmljZSAxOCBtIHNpZGRpcXVlIHRyYWRlIGNlbnRlciBndWxiZXJnIGlpIGxhaG9yZeABAA!16s%2Fg%2F11xdhn7w50?entry=ttu&g_ep=EgoyMDI1MDcyOS4wIKXMDSoASAFQAw%3D%3D"
+                          target="_blank"
+                          >Office # P-12, Siddique Trade <br />
+                          Center Gulberg II, Lahore.</a
+                        >
+                        <span class="support"> </span>
+                      </div>
+                    </div>
+                    <!-- single  contact info end -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="single-footer-wized">
+                <div class="menu-links-area">
+                  <h6 class="title">Location:</h6>
+                  <div>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13604.992348419335!2d74.33859042283885!3d31.517345479800678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905005c3e8051%3A0xa6f74fda23ff0511!2sOffice%20622%206th%20Floor%20Siddiq%20Trade%20Center%2C%2072-main%20Boulevard%2CH%20Gulberg%202%20Lahore%2C%20Pakistan!5e0!3m2!1sen!2s!4v1754078583494!5m2!1sen!2s"
+                      width="600"
+                      height="300"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-style-one">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="copyright-area-main-wrapper-one">
+                <p class="left">
+                  Copyright
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  . All Rights Reserved by in2itive Design | Proudly Designed by
+                  <a href="https://webteknes.com/" target="_blank">WebTeknes</a
+                  >.
+                </p>
+                <ul>
+                  <li>
+                    <a href=" ">Terms & conditions</a>
+                  </li>
+                  <li>
+                    <a href=" ">Privacy policy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer area end -->
+  </body>
+</html>
